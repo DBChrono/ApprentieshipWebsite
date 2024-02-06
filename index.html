@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WorkWonder Con</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="icon" type="image/x-icon" href="Images\DubbyIcon.png">
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="/js/CountDown.js"></script>
+    <script src="/js/StickyNavBar.js" defer></script>
+    <script src="/js/RegistrationModal.js"></script>
+    <script src="/js/index.js"></script>
+  </head>
+  
+  <body>
+    
+    <!--#region NavBar-->
+    <nav id="_navbar" class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="">
+          <img src="Images\Tentative_Logo2.png" width=100% height=100%>
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="">
+            Home
+          </a>
+    
+          <a class="navbar-item" href="#_promo">
+            Promo
+          </a>  
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Partners
+              </a>
+              <a class="navbar-item" href="#_guest_speakers">
+                Guest Speakers
+              </a>
+              <a class="navbar-item">
+                Behind the Scenes
+              </a>
+              <!--<hr class="navbar-divider">-->
+              <a class="navbar-item" href="#_location">
+                Location
+              </a>
+            </div>
+
+            <div class="navbar-item">
+              <p class="has-text-white" id="countDown">XX:YY:ZZ</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <button class="button is-link js-modal-trigger is-medium" data-target="modal-js-example">
+                <strong>RSVP</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--#endregion-->
+
+    <!--#region Hero Image Slider-->
+    
+    <div class="hero is-small has-background">
+      
+      <!--Image 1-->
+      <div class="mySlides fade" style="display: block;">
+        <img alt="Sliding image1" class="hero-background is is-transparent" src="Images\Carousel-Images/Carousel Image 1.jpg"/>
+      </div>
+
+      <!--Image 2-->
+      <div class="mySlides fade">
+        <img alt="Sliding image2" class="hero-background is is-transparent" src="Images\Carousel-Images\Carousel Image 3.jpg"/>
+      </div>
+
+      <!--Image 3-->
+      <div class="mySlides fade">
+        <img alt="Sliding image3" class="hero-background is is-transparent" src="Images\Carousel-Images\Carousel Image 4.jpg"/>
+      </div>
+
+      <!--Image 4-->
+      <div class="mySlides fade">
+        <img alt="Sliding image4" class="hero-background is is-transparent" src="Images\Carousel-Images\Carousel Image 5.jpg"/>
+      </div>
+
+      <!--Image 5-->
+      <div class="mySlides fade">
+        <img alt="Sliding image5" class="hero-background is is-transparent" src="Images\Carousel-Images\Carousel Image 6.jpg"/>
+      </div>
+
+      <!--Image 6-->
+      <div class="mySlides fade">
+        <img alt="Sliding image6" class="hero-background is is-transparent" src="Images\Carousel-Images\Carousel Image 7.jpg"/>
+      </div>
+
+      <!--Image 7-->
+      <div class="mySlides fade">
+        <img alt="Sliding image7" class="hero-background is is-transparent" src="Images\Carousel-Images\Carousel Image 8.jpg"/>
+      </div>
+
+      <!--Image 8-->
+      <div class="mySlides fade">
+        <img alt="Sliding image8" class="hero-background is is-transparent" src="Images\Carousel-Images\Carousel Image 9.jpg"/>
+      </div>
+
+      <!--Image 9-->
+      <div class="mySlides fade">
+        <img alt="Sliding image9" class="hero-background is is-transparent" src="Images\Carousel-Images\Carousel Image 10.jpg"/>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+    <!--#endregion-->
+
+    <!--#region Promo-->
+    <div class="section" id="_promo">
+      <h1 class="title is-1">Promo Video</h1>
+      <div class="progress-div">
+        <progress class="progress is-primary is-justify-content-left is-small" value="25" max="25">
+        </progress>
+      </div>
+      <br>
+      <div class="tile is-ancestor">
+        <!--Video Tile-->
+        <div class="tile is-6 is-parent">
+          <div class="tile has-background is-child box">
+            <video width="750px" height="600px" controls="controls">
+              <source src="/Videos/WWCon Teaser RC 2 (1).mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!--Text Tile-->
+        <div class="tile">
+          <div class="tile is-parent">
+            <div class="tile is is-child">
+              <p class="has-text-weight-bold">
+                Join Us at WorkWonder Con – Where Inspiration Meets Opportunity!
+              </p>
+
+              <p>
+                Calling all high school and college youth! Get ready for an unforgettable experience at WorkWonder Con, a dynamic networking event designed exclusively for you. With over 300 anticipated guests, this event is your gateway to endless opportunities, inspiring speakers, and exciting activities that will ignite your passion for the future.
+                
+                Immerse yourself in a day filled with knowledge and motivation as our lineup of esteemed speakers share their insights on various fields. From entrepreneurship to tech innovation, you'll gain valuable perspectives that will shape your journey ahead. But that's not all – our stage will come alive with the vibrant energy of young performers, showcasing their talents in music!
+                
+                Explore stalls by local businesses and discover emerging trends while savoring delectable treats from an array of food trucks. Plus, our showcases will highlight innovative projects and initiatives led by young visionaries, proving that age is no barrier to making a meaningful impact.
+                
+                WorkWonder Con is your chance to connect, learn, and be inspired alongside like-minded peers. Don't miss out on this incredible opportunity! Mark your calendars and join us for a day of endless wonders and exciting possibilities! 
+              </p>
+              <br>
+              <p class="is-italic">
+                Note: Event details and schedule subject to change. Stay tuned for updates on confirmed speakers and activities.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--#endregion-->
+
+  </div>
+  <!--#region Registration Button-->
+  <div class="section">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-child has-text-centered">
+          <button class="js-modal-trigger button is-primary is-medium" data-target="modal-js-example">
+            <strong> Register Now! </strong>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--#endregion-->
+    <!--#region Pink Block Section-->
+    <div class="section has-background-primary">
+      
+      <!--
+      <h1 class="title is-1 has-text-white">Thank You to Our Partners</h1>
+      -->
+
+      
+      <!--Partners Section Start-->
+      <div class="section" style="display: none;">
+        <div class="tile is-ancestor">
+          <!--Tiles 1 and 4-->
+          <div class="tile is-4 is-parent is-vertical">
+            <!--Tile 1-->
+            <div class="tile is-child box">
+              <p>One</p>
+            </div>
+
+            <!--Tile 4-->
+            <div class="tile is-child box">
+              <p>Four</p>
+            </div>
+          </div>
+
+          <!--Tiles 2 and 5-->
+          <div class="tile is-4 is-parent is-vertical">
+            <!--Tile 2-->
+            <div class="tile is-child box">
+              <p>Two</p>
+            </div>
+
+            <!--Tile 5-->
+            <div class="tile is-child box">
+              <p>Five</p>
+            </div>
+          </div>
+
+          <!--Tiles 3 and 6-->
+          <div class="tile is-4 is-parent is-vertical">
+            <!--Tile 3-->
+            <div class="tile is-child box">
+              <p>Three</p>
+            </div>
+
+            <!--Tile 6-->
+            <div class="tile is-child box">
+              <p>Six</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Partners Section End-->
+      <div class="Guest-Speakers" id="_guest_speakers">
+        <h1 class="title is-1 has-text-white">Guest Speakers</h1>
+        <div class="progress-div">
+          <progress id="whiteBarGS" class="progress is-white is-justify-content-left is-small" value="25" max="25">
+          </progress>
+        </div>
+      </div>
+
+      <!--Guest Speakers Section Start-->
+      <div class="section">
+        <div class="tile is-ancestor">
+          
+          <!--Tile 1-->
+          <div class="tile is-4 is-parent">
+            <div class="tile is-child box">
+              
+              <!--Speaker Card 1-->
+              <div class="card">
+                <div class="card-image">
+                    <img src="Images\image--2-removebgpreview-1@2x.png" alt="Placeholder image">
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Morgan Young</p>
+                      <p class="subtitle is-6">
+                        Topic - Navigating Early Career
+                        <br>
+                        <a href="https://www.linkedin.com/in/morgan-a-young/">LinkedIn</a>
+                      </p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    Computer Science & Engineering, and Entrepreneurship student
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--Tile 2-->
+          <div class="tile is-4 is-parent">
+            <div class="tile is-child box">
+              
+              <!--Speaker Card 2-->
+              <div class="card">
+                <div class="card-image">
+                    <img src="Images\image--3-removebgpreview-1@2x.png" alt="Placeholder image">
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Nikita Gupta</p>
+                      <p class="subtitle is-6">
+                        Topic - Succeeding over Challenges
+                        <br>
+                        <a href="https://www.linkedin.com/in/guptanikita16/">LinkedIn</a>
+                      </p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    Former Senior Technical Recruiter @Uber, TedX Speaker, CEO of Careerflow.ai
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--Tile 3-->
+          <div class="tile is-4 is-parent">
+            <div class="tile is-child box">
+              
+              <!--Speaker Card 3-->
+              <div class="card">
+                <div class="card-image">
+                    <img src="Images\image--4-removebgpreview-1@2x.png" alt="Placeholder image">
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Ryan Hickman</p>
+                      <p class="subtitle is-6">
+                        Topic - Experience as an entrepreneur from the age of 7
+                        <br>
+                        <a href="https://ryansrecycling.com/">Website</a>
+                      </p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    Entrepreneur, founder of Ryan's Recycling
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tile is-ancestor">
+          <!--Tile 4-->
+          <div class="tile is-6 is-parent">
+            <div class="tile is-child box">
+              
+              <!--Speaker Card 4-->
+              <div class="card">
+                <div class="card-image has-text-centered">
+                    <img src="Images\image--5-removebgpreview-1@2x.png" alt="Placeholder image">
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Sonja Lyubomirsky</p>
+                      <p class="subtitle is-6">
+                        Topic - How to be your Hero happily
+                        <br>
+                        <a href="https://www.linkedin.com/in/sonja-lyubomirsky-21283bb/">LinkedIn</a>
+                      </p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    Professor at UC Riverside
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--Tile 5-->
+          <div class="tile is-parent">
+            <div class="tile is-child box">
+              
+              <!--Speaker Card 5-->
+              <div class="card">
+                <div class="card-image has-text-centered">
+                    <img src="Images\image--6-removebgpreview-1@2x.png" alt="Placeholder image">
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Francis Piché</p>
+                      <p class="subtitle is-6">
+                        MC
+                        <br>
+                        <a href="https://www.linkedin.com/in/francispiche/">LinkedIn</a>
+                      </p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    Executive Coach
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Guest Speakers Section End-->
+    </div>
+    <!--#endregion-->
+
+    <!--#region Behind The Scenes Section--
+    <div class="section has-background-white">
+      
+      <h1 class="title is-1 has-text-black has-text-centered">Behind The Scenes</h1>
+
+      <img src="Images\[FigJam] WorkWonder Con Landing_Registration Page.png">
+
+    </div>--#endregion-->
+        <!--#region Registration Button-->
+        <div class="section">
+          <div class="container">
+            <div class="tile is-ancestor">
+              <div class="tile is-child has-text-centered">
+                <button class="js-modal-trigger button is-primary is-medium" data-target="modal-js-example">
+                  <strong> Register Now! </strong>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--#endregion-->
+
+    <!--#region Location Section-->
+    <div class="section has-background-white" id="_location">
+      <h1 class="title is-1 has-text-black has-text-centered">Location</h1>
+      <h2 class="subtitle is-4 has-text-black has-text-centered">2800 Division St, Los Angeles, CA 90065</h2>
+      <div class="container">
+        <div class="notification">
+          <div class="Google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.724202497464!2d-118.23939142368177!3d34.10220511508942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6cf17df3009%3A0x764ebed1dc199c0e!2sL.A.%20River%20Studios!5e0!3m2!1sen!2sus!4v1692883100059!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!--#endregion-->
+
+    <!--#region Registration Button-->
+    <div class="section">
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-child has-text-centered">
+            <button class="js-modal-trigger button is-primary is-medium" data-target="modal-js-example">
+              <strong>Register Now!</strong>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--#endregion-->
+    
+    <!--#region Footer Section-->
+    <footer class="footer">  
+        <div class="rowBox"> 
+          <div class="columnBox">
+            <a href="https://www.bayhagroup.com/" target="_blank">
+              <img src="/Images/Bayha Group Logo - Transparent png.png" width="150px">
+            </a>
+          </div>
+          <div class="columnBox">
+            <img src="/Images/WW_Logo_Horiz_3C_Magenta.png" width="250px">
+          </div>
+        </div>
+    </footer>
+    <!--#endregion-->
+    
+    <!--#region Modal Window-->
+    <div id="modal-js-example" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">WorkWonder Con Registration</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <!--#region Hand Made Form Start-->
+          
+          <!--First Name Field
+          <div class="field">
+            <label class="label">First Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input" id="_fName">
+            </div>
+          </div>
+          -->
+
+          <!--Last Name Field
+          <div class="field">
+            <label class="label">Last Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input" id="_lName">
+            </div>
+          </div>
+          -->
+
+          <!--Phone Number
+          <div class="field">
+            <label class="label">Phone Number</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="text" placeholder="Text input" value="(123)456-7890" id="_phoneNum">
+            </div>
+          </div>
+          -->
+          
+          <!--Email
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-link" type="email" placeholder="Email input" value="example@workwonder.io" id="_email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          -->
+          
+          <!--DropDown Menu
+          <div class="field">
+            <label class="label">Role</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Student/Alum</option>
+                  <option>Partner</option>
+                  <option>District Board Member</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          -->
+
+          <!--
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+        -->
+          
+          <!--Checkbox
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I confirm that all info is correct
+              </label>
+            </div>
+          </div>
+          -->
+          
+          <!--Radio Selection
+          <div class="field">
+            <div class="control">
+              <label class="radio">
+                <p>I would like to be enrolled into a WorkWonder newsletter</p>
+                <input type="radio" name="question">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="question">
+                No
+              </label>
+            </div>
+          </div>
+          -->
+          
+          <!--#endregion-->
+
+          <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+          <iframe 
+            class="airtable-embed airtable-dynamic-height" 
+            src="https://airtable.com/embed/appYJLj0b9GqJZSqD/shrECQ9mUkR7BtGNu?backgroundColor=redLight" 
+            frameborder="0" onmousewheel="" width="100%" height="2005" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </section>
+
+        <footer class="modal-card-foot">
+          
+          <div class="icon-text">
+            <span class="icon has-text-info">
+              <i class="fas fa-info-circle"></i>
+            </span>
+            <span>
+              <a href="https://bayhagroup0-my.sharepoint.com/:w:/g/personal/enrique_bayhagroup_com/Ecrc7YHX7bpIkb_cbH4VKZ8BjraGn1IeupjQ84JYKjoUrA?e=EF3E4L" target="_blank">WorkWonder Con Terms and Conditions</a>
+            </span>
+          </div>
+          
+        </footer>
+      </div>
+    </div>
+    <!--#endregion-->
+
+  </body>
+</html>
