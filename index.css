@@ -6,6 +6,9 @@
     box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
   }
 }
+.card{
+  padding: 1.5rem;
+}
 .shape-with-text {
   position: relative;
   border-radius: var(--br-7xs);
@@ -194,11 +197,15 @@
   margin-top: -15px;
 }
 .progress{
-  max-width: 290px;
+  max-width: 100px;
 }
 
 #whiteBarGS{
-  max-width: 335px;
+  max-width: 180px;
+}
+
+#blackBarGS{
+  max-width: 368px;
 }
 
 /* The dots/bullets/indicators */
